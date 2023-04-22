@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Smythe', cursive;
+}
+
+header {
+    height: 170px;
+    width: 600px;
+    background-image: url(./images/ferks-guare-KEZdWfYD-ow-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+    color: #ffffff;
+}
+
+header div {
+    margin: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+
+main {
+    width: 600px;
+    min-height: 700px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu--item {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.menu--item span {
+    font-size: 70px;
+}
+
+.menu--item__description {
+    display: flex;
+}
+
+.description--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.description--text h3, p, h6 {
+    margin: 0;
+}
+
+.description--text h3 {
+    font-size: 28px;
+}
+
+.description--text p {
+    font-size: 16px;
+}
+
+.description--text h6 {
+    font-size: 20px;
+}
+
+.add-item {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: #3C3C3C;
+    font-size: 32px;
+    background-color: transparent;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+}
+
+.add-item:hover {
+    cursor: pointer;
+}
+
+.chosen {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+.chosen h3 {    
+    font-size: 28px;
+}
+
+.chosen--container__list {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chosen--container__list h3, h6 {
+    margin: 0;
+}
+
+.chosen--container__list h3 {
+    font-size: 28px;
+}
+
+.chosen--container__list h3 span {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+.chosen--container__list h3 span:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.chosen--container__list h6 {
+    font-size: 20px;
+}
+
+.total-price {
+    margin-top: 25px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #393333;
+}
+
+.total-price h3, h6 {
+    margin: 0;
+}
+
+.total-price h3 {
+    font-size: 28px;
+}
+
+.total-price h6 {
+    font-size: 20px;
+}
+
+.chosen-btn {
+    cursor: pointer;
+    width: 500px;
+    height: 60px;
+    margin-top: 50px;
+    border: none;
+    font-size: 32px;
+    font-family: 'Smythe', cursive;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #16DB99;
+}
+
+.modal {
+    display: none;
+    width: 520px;
+    height: 520px;
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    top: 28%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    box-shadow: 0px 4px 50px 40px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+
+.modal input {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.modal-pay-btn {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.thanks-message {
+    width: 500px;
+    height: 120px;
+    display: flex;
+    margin: 45px auto 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECFDF5;
+}
+
+.thanks-message h2 {
+    margin: 0;
+    color: #065F46;
+    font-size: 32px;
+}
